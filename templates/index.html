@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EgoTrack | Digital Ledger for Informal Market Merchants</title>
+    <meta
+      name="description"
+      content="EgoTrack is a mobile-first digital ledger for informal market merchants in Nigeria to track sales, debts, receipts, and growth."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="EgoTrack home">
+          <span class="brand-mark">E</span>
+          <span>EgoTrack</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#proof">Proof</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <a class="nav-cta" href="#waitlist">Join Pilot</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-grid container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Built for informal market merchants</p>
+            <h1>Track the money. Prove the trade. Grow the business.</h1>
+            <p class="hero-text">
+              EgoTrack is the digital ledger built for informal market merchants
+              across Nigeria, starting with high-volume auto spare-parts dealers.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#waitlist">Start Free Trial</a>
+              <a class="button secondary" href="#demo">Watch Demo</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" id="demo" aria-label="EgoTrack app dashboard mockup">
+            <div class="floating-chip chip-naira">₦</div>
+            <div class="floating-chip chip-receipt">Receipt</div>
+            <div class="phone-shell main-phone">
+              <div class="phone-screen">
+                <div class="phone-top">
+                  <span>EgoTrack</span>
+                  <span class="status-pill">Today</span>
+                </div>
+                <div class="balance-card">
+                  <span>Net movement</span>
+                  <strong>₦88,500</strong>
+                  <small>+18% this week</small>
+                </div>
+                <div class="mini-chart" aria-hidden="true">
+                  <span style="height: 36%"></span>
+                  <span style="height: 62%"></span>
+                  <span style="height: 48%"></span>
+                  <span style="height: 82%"></span>
+                  <span style="height: 54%"></span>
+                </div>
+                <div class="entry-list">
+                  <div>
+                    <span>Sold: Corolla ABS</span>
+                    <strong>₦68,000</strong>
+                  </div>
+                  <div>
+                    <span>Inventory spend</span>
+                    <strong>₦255,000</strong>
+                  </div>
+                  <div>
+                    <span>Debt due: Musa</span>
+                    <strong>₦18,000</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section problem">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The problem</p>
+            <h2>Paper ledgers are costing merchants money</h2>
+            <p>
+              Notebooks, memory, WhatsApp chats, and loose receipts create
+              gaps in visibility, trust, and business performance.
+            </p>
+          </div>
+
+          <div class="problem-grid">
+            <article class="problem-card reveal">
+              <span class="icon-box">01</span>
+              <h3>Lost visibility</h3>
+              <p>Daily purchases, expenses, and sales are scattered across notebooks and chats.</p>
+            </article>
+            <article class="problem-card reveal">
+              <span class="icon-box">02</span>
+              <h3>Untracked debts</h3>
+              <p>Customer balances and due dates are easy to forget in busy market workflows.</p>
+            </article>
+            <article class="problem-card reveal">
+              <span class="icon-box">03</span>
+              <h3>No proof</h3>
+              <p>Receipts get lost or disputed, leaving merchants without a clean trade record.</p>
+            </article>
+            <article class="problem-card reveal">
+              <span class="icon-box">04</span>
+              <h3>No growth signal</h3>
+              <p>Busy sales days do not always show whether weekly or monthly profit is improving.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section solution" id="features">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">The solution</p>
+            <h2>One app. Complete financial visibility.</h2>
+            <p>
+              EgoTrack keeps the product simple: log trades quickly, track debts
+              clearly, and turn every transaction into usable business data.
+            </p>
+          </div>
+
+          <div class="feature-stack">
+            <article class="feature-row reveal">
+              <div class="mini-phone">
+                <div class="phone-screen compact">
+                  <div class="phone-top"><span>Ledger</span><span class="status-pill">Live</span></div>
+                  <div class="entry-list">
+                    <div><span>Purchase</span><strong>₦145,000</strong></div>
+                    <div><span>Sale</span><strong>₦220,000</strong></div>
+                    <div><span>Expense</span><strong>₦12,500</strong></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3>Daily Ledger</h3>
+                <p>Record every purchase, expense, sale, and inventory cost in seconds.</p>
+              </div>
+            </article>
+
+            <article class="feature-row reverse reveal">
+              <div>
+                <h3>Debt Registry</h3>
+                <p>Track who owes what, payment status, and due dates from one clean list.</p>
+              </div>
+              <div class="mini-phone">
+                <div class="phone-screen compact">
+                  <div class="phone-top"><span>Debts</span><span class="status-pill">5 due</span></div>
+                  <div class="debt-row"><span>Musa</span><strong>₦18,000</strong></div>
+                  <div class="debt-row"><span>Ada Parts</span><strong>₦42,000</strong></div>
+                  <div class="debt-row paid"><span>Kelechi</span><strong>Paid</strong></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="feature-row reveal">
+              <div class="mini-phone">
+                <div class="phone-screen compact">
+                  <div class="phone-top"><span>Growth</span><span class="status-pill">Month</span></div>
+                  <div class="mini-chart wide" aria-hidden="true">
+                    <span style="height: 42%"></span>
+                    <span style="height: 64%"></span>
+                    <span style="height: 52%"></span>
+                    <span style="height: 78%"></span>
+                    <span style="height: 92%"></span>
+                  </div>
+                  <div class="balance-card small">
+                    <span>Monthly movement</span>
+                    <strong>+24%</strong>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3>Growth Analytics</h3>
+                <p>See weekly, monthly, and yearly business performance without spreadsheets.</p>
+              </div>
+            </article>
+
+            <article class="feature-row reverse reveal">
+              <div>
+                <h3>Proof of Trade</h3>
+                <p>Generate digital receipts and transaction logs that serve as verifiable proof.</p>
+              </div>
+              <div class="mini-phone">
+                <div class="phone-screen compact">
+                  <div class="receipt-card">
+                    <small>Receipt #ET-2407</small>
+                    <strong>Toyota Corolla ABS</strong>
+                    <span>Buyer: A. Musa</span>
+                    <span>Amount: ₦68,000</span>
+                    <span>Status: Delivered</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof" id="proof">
+        <div class="container proof-grid">
+          <div class="reveal">
+            <p class="eyebrow">Proof layer</p>
+            <h2>Records become trust</h2>
+            <p>
+              EgoTrack is more than bookkeeping. It gives dealers, buyers, and
+              future finance partners a defensible record of what happened in a trade.
+            </p>
+            <ul class="check-list">
+              <li>Clean history of money received and goods supplied</li>
+              <li>Outstanding balances tied to a customer and transaction</li>
+              <li>Data foundation for future inventory financing</li>
+            </ul>
+          </div>
+          <div class="proof-card reveal">
+            <div class="receipt-preview">
+              <div class="receipt-head">
+                <span>Proof of Trade</span>
+                <strong>#ET-2407</strong>
+              </div>
+              <dl>
+                <div><dt>Buyer</dt><dd>A. Musa</dd></div>
+                <div><dt>Item</dt><dd>Toyota Corolla ABS</dd></div>
+                <div><dt>Amount</dt><dd>₦68,000</dd></div>
+                <div><dt>Status</dt><dd>Part delivered</dd></div>
+                <div><dt>Balance</dt><dd>₦18,000 due</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Pricing</p>
+            <h2>Simple pricing. Serious value.</h2>
+            <p>Start free, then upgrade when analytics, reports, and team access matter.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card reveal">
+              <span class="plan">Free Forever</span>
+              <h3>₦0<span>/month</span></h3>
+              <p>Basic ledger, limited monthly entries, and debt tracking for early use.</p>
+              <a class="button secondary" href="#waitlist">Start Free</a>
+            </article>
+            <article class="price-card featured reveal">
+              <span class="plan">Premium</span>
+              <h3>₦2,500<span>/month</span></h3>
+              <p>Unlimited entries, debt tracking, growth analytics, exports, and multi-user access.</p>
+              <a class="button primary" href="#waitlist">Start Trial</a>
+            </article>
+            <article class="price-card reveal">
+              <span class="plan">Enterprise</span>
+              <h3>Custom</h3>
+              <p>Market association features, priority support, reports, and future integrations.</p>
+              <a class="button secondary" href="#waitlist">Contact Sales</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="waitlist">
+        <div class="container waitlist-grid">
+          <div class="cta-inner">
+            <p class="eyebrow light">Join the pilot</p>
+            <h2>Ready to take control of your business records?</h2>
+            <p>Submit your details and you will be added to the EgoTrack waitlist.</p>
+            <small>No credit card required. Built for practical daily use.</small>
+          </div>
+
+          <form
+            class="waitlist-form"
+            id="waitlistForm"
+          >
+            <label>
+              Full name
+              <input name="Full name" type="text" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Email address
+              <input name="Email" type="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              WhatsApp number
+              <input name="WhatsApp number" type="tel" placeholder="+234..." required />
+            </label>
+
+            <label>
+              Business type
+              <select name="Business type" required>
+                <option value="">Select one</option>
+                <option>Spare-parts dealer</option>
+                <option>Wholesaler / importer</option>
+                <option>Mechanic / repair business</option>
+                <option>Market association</option>
+                <option>Other informal retail business</option>
+              </select>
+            </label>
+
+            <label>
+              Market / location
+              <input name="Market or location" type="text" placeholder="Ladipo, Alaba, Onitsha..." required />
+            </label>
+
+            <label>
+              What do you want EgoTrack to help you track?
+              <textarea name="Tracking need" rows="4" placeholder="Sales, debts, receipts, inventory costs..."></textarea>
+            </label>
+
+            <button class="button primary" type="submit" id="submitBtn">Submit Details</button>
+            <p class="form-note" id="formMessage">
+              Your submission will be sent to nwokoloebube21@gmail.com with the title
+              “EgoTrack Waitlist”.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#top">
+            <span class="brand-mark">E</span>
+            <span>EgoTrack</span>
+          </a>
+          <p>Track the money. Prove the trade. Grow the business.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#demo">Demo</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="mailto:nwokoloebube21@gmail.com">About</a>
+          <a href="mailto:nwokoloebube21@gmail.com">Pilot</a>
+          <a href="mailto:nwokoloebube21@gmail.com">Careers</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="mailto:nwokoloebube21@gmail.com">Contact</a>
+          <a href="mailto:nwokoloebube21@gmail.com">Help Center</a>
+          <a href="mailto:nwokoloebube21@gmail.com">WhatsApp</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 EgoTrack. All rights reserved.</span>
+        <span>Privacy Policy · Terms of Service</span>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
