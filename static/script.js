@@ -36,7 +36,7 @@ if (waitlistForm) {
     submitBtn.textContent = "Submitting...";
 
     try {
-      const response = await fetch("http://localhost:5000/submit-waitlist", {
+      const response = await fetch("/submit-waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ if (waitlistForm) {
 
         // Reset message after 5 seconds
         setTimeout(() => {
-          formMessage.textContent = "Your submission will be sent to nwokoloebube21@gmail.com with the title 'EgoTrack Waitlist'.";
+          formMessage.textContent = "Your submission has been recorded. We will reach out soon!";
           formMessage.style.color = "";
         }, 5000);
       } else {
@@ -68,7 +68,7 @@ if (waitlistForm) {
       }
     } catch (error) {
       console.error("Error:", error);
-      formMessage.textContent = "Server is not running. Please make sure the Flask server is started.";
+      formMessage.textContent = "Submission failed. Please try again or contact us directly.";
       formMessage.style.color = "red";
       submitBtn.textContent = "Submit Details";
       submitBtn.disabled = false;
